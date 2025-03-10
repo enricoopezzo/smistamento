@@ -1,75 +1,10 @@
-# Nuxt Minimal Starter
+# Smistamento
 
-Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+Smistamento è una Single Page Application (SPA) sviluppata con Nuxt.js che ti permette di scoprire in quale casata di Hogwarts verresti smistato se fossi uno studente della scuola di magia e stregoneria. Rispondi alle domande e lascia che il "Cappello Parlante" digitale decida per te!
 
-## Setup
+## Tecnologie Utilizzate
 
-Make sure to install dependencies:
-
-```bash
-# npm
-npm install
-
-# pnpm
-pnpm install
-
-# yarn
-yarn install
-
-# bun
-bun install
-```
-
-## Development Server
-
-Start the development server on `http://localhost:3000`:
-
-```bash
-# npm
-npm run dev
-
-# pnpm
-pnpm dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
-```
-
-## Production
-
-Build the application for production:
-
-```bash
-# npm
-npm run build
-
-# pnpm
-pnpm build
-
-# yarn
-yarn build
-
-# bun
-bun run build
-```
-
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+Nuxt.js
+Vue.js 
+Tailwind CSS
+Daisy UI
