@@ -1,0 +1,24 @@
+{
+  "casate": [
+    {
+      "name": "gryffindor",
+      "label": "Grifondoro",
+      "descrizione": "La casa di Grifondoro è nota per il coraggio, l'onore e la determinazione. I membri di questa casa sono spesso pronti a difendere ciò che è giusto, anche a rischio della propria vita. Fondata da Godric Grifondoro, la casa è simbolo di valori forti come il coraggio e la lealtà."
+    },
+    {
+      "name": "slytherin",
+      "label": "Serpeverde",
+      "descrizione": "La casa di Serpeverde è famosa per la sua astuzia, ambizione e capacità di leadership. Gli studenti di Serpeverde sono spesso astuti e pronti a usare qualsiasi mezzo per raggiungere i loro obiettivi. Fondata da Salazar Serpeverde, questa casa è associata a valori di ambizione e astuzia."
+    },
+    {
+      "name": "hufflepuff",
+      "label": "Tassorosso",
+      "descrizione": "La casa di Tassorosso è conosciuta per il suo impegno, la dedizione e la giustizia. I membri di questa casa sono spesso descritti come laboriosi, gentili e leali. Fondata da Helga Tassorosso, questa casa celebra la costanza e l'affidabilità."
+    },
+    {
+      "name": "ravenclaw",
+      "label": "Corvonero",
+      "descrizione": "La casa di Corvonero è celebre per la sua intelligenza, creatività e amore per l'apprendimento. Gli studenti di questa casa sono spesso brillanti accademici, ma anche dotati di originalità e pensiero critico. Fondata da Rowena Corvonero, la casa enfatizza la ricerca della saggezza."
+    }
+  ]
+}

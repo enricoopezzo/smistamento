@@ -1,0 +1,825 @@
+{
+  "questions": [
+    {
+      "question": "Ti trovi a Diagon Alley, la via magica nel cuore di Londra dove si affacciano tutti i negozi dei maghi e dove è possibile acquistare qualsiasi oggetto incantato. Prima di scegliere la tua bacchetta da Olivander dove ti dirigeresti?",
+      "answers": [
+        {
+          "text": "Ai Tiri Vispi Weasley, il negozio di scherzi dei gemelli Weasley, per fare scorta di Merendine Marinare o altri articoli spiritosi da rifilare ai tuoi futuri compagni.",
+          "score": {
+            "gryffindor": 2,
+            "slytherin": 2,
+            "ravenclaw": 0,
+            "hufflepuff": 1
+          }
+        },
+        {
+          "text": "Da Accessori di Prima Qualità per il Quidditch per comprare il tuo primo manico di scopa.",
+          "score": {
+            "gryffindor": 2,
+            "slytherin": 1,
+            "ravenclaw": 0,
+            "hufflepuff": -1
+          }
+        },
+        {
+          "text": "Al Serraglio Stregato per scegliere un gufo, un gatto o un altro animale magico da portare con te a Hogwarts.",
+          "score": {
+            "gryffindor": -1,
+            "slytherin": 0,
+            "ravenclaw": 2,
+            "hufflepuff": 1
+          }
+        },
+        {
+          "text": "A Il Ghirigoro e allo Speziale per comprare i libri, il calderone e tutti gli ingredienti necessari per il primo anno.",
+          "score": {
+            "gryffindor": -1,
+            "slytherin": 1,
+            "ravenclaw": 3,
+            "hufflepuff": 2
+                }
+        }
+      ]
+    },
+    {
+      "question": "Eccoti al negozio di Olivander, uno dei migliori produttori di bacchette magiche esistenti al mondo. Tra un attimo te ne farà provare alcune affinché quella giusta ti scelga. Di cosa speri sia fatto il nucleo della tua futura bacchetta?",
+      "answers": [
+        {
+          "text": "Crine d’Unicorno (rende la bacchetta difficilmente corruttibile alle Arti Oscure e con esso è possibile produrre incanti di protezione molto efficaci).",
+          "score": {
+            "gryffindor": -1,
+            "slytherin": 0,
+            "ravenclaw": 2,
+            "hufflepuff": 2
+          }
+        },
+        {
+          "text": "Corda di cuore di Drago (permette di ottenere le bacchette più potenti e temibili, ma anche le meno fedeli).",
+          "score": {
+            "gryffindor": 2,
+            "slytherin": 2,
+            "ravenclaw": 0,
+            "hufflepuff": -1
+          }
+        },
+        {
+          "text": "Crine di Thestral (raramente utilizzato per i possibili effetti collaterali, con esso le bacchette eseguiranno gli incantesimi più sorprendenti e spettacolari).",
+          "score": {
+            "gryffindor": 1,
+            "slytherin": 0,
+            "ravenclaw": 3,
+            "hufflepuff": -1
+          }
+        },
+        {
+          "text": "Piuma di Fenice (rende la bacchetta capricciosa e difficile da gestire, ma permette di produrre incanti molto complessi e ingegnosi).",
+          "score": {
+            "gryffindor": 2,
+            "slytherin": 1,
+            "ravenclaw": -1,
+            "hufflepuff": 0
+          }
+        }
+      ]
+    },
+    {
+        "question" : "Arrivato ad Hogwarts scoprirai che alcune materie saranno obbligatorie, altre a scelta, alcune nel corso degli studi potrai abbandonarle. Potendo quale tra le seguenti lezioni NON vorresti mai seguire?",
+        "answers" : [
+            {
+                "text" : "Aritmanzia (il complicato studio dei numeri magici).",
+                "score" : {
+                    "gryffindor" : 2,
+                    "slytherin" : 0,
+                    "ravenclaw" : 0,
+                    "hufflepuff" : -1
+                }
+            },
+            {
+                "text" : "Volo (il faticoso studio delle tecniche di utilizzo dei manici di scopa).",
+                "score" : {
+                    "gryffindor" : -1,
+                    "slytherin" : 0,
+                    "ravenclaw" : 2,
+                    "hufflepuff" : 1
+                }
+            },
+            {
+                "text" : "Babbanologia (il tedioso studio dei Babbani dal punto di vista magico).",
+                "score" : {
+                    "gryffindor" : 0,
+                    "slytherin" : 1,
+                    "ravenclaw" : -1,
+                    "hufflepuff" : 2
+                }
+            },
+            {
+                "text" : "Storia della Magia (il noioso studio delle vicende magiche con il prof. fantasma Ruf).",
+                "score" : {
+                    "gryffindor" : 1,
+                    "slytherin" : 2,
+                    "ravenclaw" : 0,
+                    "hufflepuff" : -1
+                }
+            }
+        ]
+    },
+    {
+        "question" : "Iniziano le lezioni, prime due ore Pozioni! Per farti ambientare ti viene chiesto di scegliere un filtro in cui ti piacerebbe cimentarti, quale sceglieresti?",
+        "answers" : [
+            {
+                "text" : "Felix Felicis (pozione che per alcune ore regala fortuna e intuizioni).",
+                "score" : {
+                    "gryffindor" : 2,
+                    "slytherin" : 1,
+                    "ravenclaw" : 0,
+                    "hufflepuff" : -1
+                }
+            },
+            {
+                "text" : "Veritasserum (pozione che obbliga a dire la verità).",
+                "score" : {
+                    "gryffindor" : 3,
+                    "slytherin" : 2,
+                    "ravenclaw" : 0,
+                    "hufflepuff" : -1
+                }
+            },
+            {
+                "text" : "Pozione Polisucco (pozione per assumere le sembianze di qualcun altro).",
+                "score" : {
+                    "gryffindor" : 2,
+                    "slytherin" : 2,
+                    "ravenclaw" : 1,
+                    "hufflepuff" : 0
+                }
+            },
+            {
+                "text" : "Elisir di Euforia (pozione che rende felici e calma l’ansia).",
+                "score" : {
+                    "gryffindor" : 3,
+                    "slytherin" : 1,
+                    "ravenclaw" : 0,
+                    "hufflepuff" : -1
+                }
+            }
+        ]
+    },
+    {
+        "question" : "La vita a Hogwarts non è soltanto compiti e lezioni, hai anche del tempo libero per svagarti in Sala Comune e chiacchierando con i compagni scoprire curiosità sul mondo magico. Per spostarsi, per esempio, i maghi utilizzano diversi mezzi di trasporto. Quale pensi faccia maggiormente per te?",
+        "answers" : [
+            {
+                "text" : "Thestral (creature equine alate visibili solo a chi abbia assistito alla morte di una persona).",
+                "score" : {
+                    "gryffindor" : 2,
+                    "slytherin" : 0,
+                    "ravenclaw" : 0,
+                    "hufflepuff" : -1
+                }
+            },
+            {
+                "text" : "Metropolvere (magica polvere usata per spostarsi attraverso i camini).",
+                "score" : {
+                    "gryffindor" : -1,
+                    "slytherin" : 1,
+                    "ravenclaw" : 2,
+                    "hufflepuff" : 0
+                }
+            },
+            {
+                "text" : "Armadi svanitori (comodi ed eleganti mezzi per mettere in comunicazione due case di maghi).",
+                "score" : {
+                    "gryffindor" : 0,
+                    "slytherin" : 2,
+                    "ravenclaw" : 1,
+                    "hufflepuff" : -1
+                }
+            },
+            {
+                "text" : "Passaporte (complicato incantesimo con cui stregare oggetti comuni creando un collegamento tra due luoghi stabiliti).",
+                "score" : {
+                    "gryffindor" : 1,
+                    "slytherin" : 2,
+                    "ravenclaw" : 0,
+                    "hufflepuff" : -1
+                }
+            }
+        ]
+    },
+    {
+        "question" : "A lezione di Erbologia oggi potrai scegliere una nuova pianta magica da studiare per il compito della prossima settimana, per quale pensi di optare?", 
+        "answers" : [
+            {
+                "text" : "Dittamo (erba dalle potenti proprietà curative).",
+                "score" : {
+                    "gryffindor" : 3,
+                    "slytherin" : 1,
+                    "ravenclaw" : 0,
+                    "hufflepuff" : -1
+                }
+            },
+            {
+                "text" : "Algabranchia (alga che permette di respirare sott’acqua).",
+                "score" : {
+                    "gryffindor" : 2,
+                    "slytherin" : 0,
+                    "ravenclaw" : 1,
+                    "hufflepuff" : -1
+                }
+            },
+            {
+                "text" : "Platano Picchiatore (pianta usata come guardia o come difesa in quanto dotata di grossi rami contundenti con i quali può colpire e distruggere).",
+                "score" : {
+                    "gryffindor" : 0,
+                    "slytherin" : 1,
+                    "ravenclaw" : 2,
+                    "hufflepuff" : -1
+                }
+            },
+            {
+                "text" : "Mandragora (arbusto magico con radici a forma d’infante, dai grandi poteri curativi, ma il cui verso causa la morte).",
+                "score" : {
+                    "gryffindor" : 2,
+                    "slytherin" : 1,
+                    "ravenclaw" : 0,
+                    "hufflepuff" : -1
+                }
+            }
+        ]
+    },
+    {
+        "question" : "Durante le tue giornate libere ad Hogwarts le cose che si possono fare sono innumerevoli, in cosa pensi ti cimenteresti più di frequente?",
+        "answers" : [
+            {
+                "text" : "Organizzare feste nel dormitorio coinvolgendo gli altri studenti della Casa.",
+                "score" : {
+                    "gryffindor" : 3,
+                    "slytherin" : 2,
+                    "ravenclaw" : 2,
+                    "hufflepuff" : 0
+                }
+            },
+            {
+                "text" : "Esplorare il castello per scoprire nuovi passaggi segreti.",
+                "score" : {
+                    "gryffindor" : 2,
+                    "slytherin" : 1,
+                    "ravenclaw" : 0,
+                    "hufflepuff" : 0
+                }
+            },
+            {
+                "text" : "Sgattaiolaredi nascosto nella Foresta Proibita.",
+                "score" : {
+                    "gryffindor" : 2,
+                    "slytherin" : 0,
+                    "ravenclaw" : 0,
+                    "hufflepuff" : -1
+                }
+            },
+            {
+                "text" : "Sfidarsi con incantesimi e maledizioni al Club dei Duellanti.",
+                "score" : {
+                    "gryffindor" : 2,
+                    "slytherin" : 1,
+                    "ravenclaw" : 1,
+                    "hufflepuff" : 0
+                }
+            }
+        ]
+    },
+    {
+        
+        "question": "Lezione di Incantesimi, avete appena terminato gli Incanti di Appello, oggi cosa ti auguri di imparare?",
+        "answers": [
+            {
+                "text": "Aguamenti (l’incanto per creare un getto d’acqua anche molto potente).",
+                "score": {
+                    "gryffindor": 2,
+                    "slytherin": 2,
+                    "ravenclaw": 1,
+                    "hufflepuff": 0
+                }
+            },
+            {
+                "text": "Obliviate (l’incanto per cancellare in parte o totalmente i ricordi).",
+                "score": {
+                    "gryffindor": 2,
+                    "slytherin": 1,
+                    "ravenclaw": 0,
+                    "hufflepuff": 1
+                }
+            },
+            {
+                "text": "Incendio (l’incanto per creare fiamme di media portata).",
+                "score": {
+                    "gryffindor": 1,
+                    "slytherin": 0,
+                    "ravenclaw": 1,
+                    "hufflepuff": 1
+                }
+            },
+            {
+                "text": "Geminio (l’incanto per duplicare gli oggetti).",
+                "score": {
+                    "gryffindor": 0,
+                    "slytherin": 1,
+                    "ravenclaw": 1,
+                    "hufflepuff": 1
+                }
+            }
+        ]
+    },
+    {
+        "question": "A Hogsmeade, villaggio totalmente abitato da maghi e streghe nei pressi di Hogwarts, ci sono negozi di ogni genere. In una vetrina sono esposte diverse fiale di Amortentia, un potente filtro d’amore che emana fragranze diverse specifiche per ogni mago o strega. Quale profumo pensi assumerebbe per te?",
+        "answers": [
+            {
+                "text": "L’odore di pergamena nuova e libri appena acquistati.",
+                "score": {
+                    "gryffindor": 2,
+                    "slytherin": 0,
+                    "ravenclaw": 0,
+                    "hufflepuff": -1
+                }
+            },
+            {
+                "text": "Il profumo selvatico di prateria battuta dal vento.",
+                "score": {
+                    "gryffindor": 0,
+                    "slytherin": 0,
+                    "ravenclaw": 2,
+                    "hufflepuff": 1
+                }
+            },
+            {
+                "text": "La deliziosa fragranza di Zuccotti di Zucca appena sfornati.",
+                "score": {
+                    "gryffindor": 0,
+                    "slytherin": 1,
+                    "ravenclaw": 0,
+                    "hufflepuff": 2
+                }
+            },
+            {
+                "text": "L’aroma fresco ma intenso di un vino elfico d’ottima annata.",
+                "score": {
+                    "gryffindor": 0,
+                    "slytherin": 2,
+                    "ravenclaw": 1,
+                    "hufflepuff": 0
+                }
+            }
+        ]
+    },
+    {
+        "question": "A lezione di Cura delle Creature Magiche venite accompagnati verso i margini della Foresta Proibita per studiare una nuova creatura, quale speri che sia?",
+        "answers": [
+            {
+                "text": "Sfinge (letale creatura dalle profonde e occulte conoscenze).",
+                "score": {
+                    "gryffindor": 2,
+                    "slytherin": 0,
+                    "ravenclaw": 2,
+                    "hufflepuff": -1
+                }
+            },
+            {
+                "text": "Unicorno (magico equino dai poteri curativi straordinari).",
+                "score": {
+                    "gryffindor": 0,
+                    "slytherin": 0,
+                    "ravenclaw": 2,
+                    "hufflepuff": 2
+                }
+            },
+            {
+                "text": "Drago (potente creatura mitologica da sempre oggetto di culto e timore).",
+                "score": {
+                    "gryffindor": 2,
+                    "slytherin": 2,
+                    "ravenclaw": 0,
+                    "hufflepuff": -1
+                }
+            },
+            {
+                "text": "Fenice (leggendario uccello di fuoco che rinasce dalle proprie ceneri).",
+                "score": {
+                    "gryffindor": 0,
+                    "slytherin": 0,
+                    "ravenclaw": 2,
+                    "hufflepuff": 2
+                }
+            }
+        ]
+    },
+    {
+        "question": "Nel castello e nel mondo magico esistono oggetti incantati di ogni forma e funzione. Potendo sceglierne due quali vorresti possedere?",
+        "answers": [
+            {
+                "text": "La Pietra Filosofale (sostanza col potere di mutare i metalli in oro, da cui si ricava l’Elisir di Vita Eterna) e il Calice di Fuoco (leggendario bacile in grado di individuare campioni).",
+                "score": {
+                    "gryffindor": 2,
+                    "slytherin": 1,
+                    "ravenclaw": 0,
+                    "hufflepuff": -1
+                }
+            },
+            {
+                "text": "Una Giratempo (strumento per viaggiare indietro nel tempo di alcune ore) e il Pensatoio (bacile in cui riporre pensieri e ricordi che potranno essere conservati e consultati nel tempo).",
+                "score": {
+                    "gryffindor": 0,
+                    "slytherin": 0,
+                    "ravenclaw": 2,
+                    "hufflepuff": 2
+                }
+            },
+            {
+                "text": "La Mappa del Malandrino (cartina stregata che mostra il castello di Hogwarts e dove si trovano tutti i suoi abitanti) e un Boccino d’Oro (pallina dorata e alata presente nel gioco del Quidditch che possiede una memoria tattile).",
+                "score": {
+                    "gryffindor": 0,
+                    "slytherin": 0,
+                    "ravenclaw": 2,
+                    "hufflepuff": 2
+                }
+            },
+            {
+                "text": "Il Mantello dell’Invisibilità (uno dei tre Doni della Morte, capace di celarti alla vista) e il Deluminatore (strumento in grado di raccogliere le luci circostanti al suo interno e di portarti verso le persone che desideri incontrare).",
+                "score": {
+                    "gryffindor": 0,
+                    "slytherin": 0,
+                    "ravenclaw": 2,
+                    "hufflepuff": 2
+                }
+            }
+        ]
+    },
+    {
+        "question": "A lezione di Trasfigurazione ti viene spiegato il complicato incantesimo per trasformarti in animale. Se riuscissi a diventare un Animago di quale animale vorresti prendere le sembianze?",
+        "answers": [
+            {
+                "text": "Riccio o cinghiale o ape o suricate.",
+                "score": {
+                    "gryffindor": 0,
+                    "slytherin": 1,
+                    "ravenclaw": 1,
+                    "hufflepuff": 1
+                }
+            },
+            {
+                "text": "Lupo o orso o mangusta o ghiottone.",
+                "score": {
+                    "gryffindor": 1,
+                    "slytherin": 1,
+                    "ravenclaw": 0,
+                    "hufflepuff": 1
+                }
+            },
+            {
+                "text": "Orca o castoro o cornacchia o scimpanzé.",
+                "score": {
+                    "gryffindor": 1,
+                    "slytherin": 0,
+                    "ravenclaw": 1,
+                    "hufflepuff": 1
+                }
+            },
+            {
+                "text": "Volpe o donnola o cuculo o gabbiano.",
+                "score": {
+                    "gryffindor": 1,
+                    "slytherin": 0,
+                    "ravenclaw": 1,
+                    "hufflepuff": 1
+                }
+            }
+        ]
+    },
+    {
+        "question": "Nel mondo magico ti troverai anche ad affrontare forze oscure, maghi malvagi, sinistri incidenti e paure viscerali. Se dovessi pensare al peggiore degli incubi, quale sarebbe?",
+        "answers": [
+            {
+                "text": "Venire rinchiuso per il resto della vita in una fredda e solitaria cella della terrificante prigione di Nurmengard, creata dal mago oscuro Grindelwald.",
+                "score": {
+                    "gryffindor": 2,
+                    "slytherin": 1,
+                    "ravenclaw": 3,
+                    "hufflepuff": 2
+                }
+            },
+            {
+                "text": "Essere condannato dal Wizengamot, per uso improprio della magia, alla confisca della bacchetta e all’allontanamento dal mondo magico.",
+                "score": {
+                    "gryffindor": 3,
+                    "slytherin": 2,
+                    "ravenclaw": 2,
+                    "hufflepuff": 1
+                }
+            },
+            {
+                "text": "Perdere la memoria e restare sfregiato in seguito a un esperimento magico fallito.",
+                "score": {
+                    "gryffindor": 3,
+                    "slytherin": 2,
+                    "ravenclaw": 3,
+                    "hufflepuff": 2
+                }
+            },
+            {
+                "text": "Essere coinvolto in un terribile incidente con un drago selvaggio, restando paralizzato dalla vita in giù.",
+                "score": {
+                    "gryffindor": 3,
+                    "slytherin": 1,
+                    "ravenclaw": 2,
+                    "hufflepuff": 2
+                }
+            }
+        ]
+    },
+    {
+        "question": "A lezione di Difesa contro le Arti Oscure vengono insegnate le magie che solitamente piacciono maggiormente nonostante la generale maggior difficoltà. La prossima settimana avete in programma l’Incanto Patronus, oggi invece cosa ti piacerebbe imparare?",
+        "answers": [
+            {
+                "text": "Confundo (un complesso incantesimo per confondere il nemico).",
+                "score": {
+                    "gryffindor": 2,
+                    "slytherin": 1,
+                    "ravenclaw": 0,
+                    "hufflepuff": 1
+                }
+            },
+            {
+                "text": "Stupeficium (un efficacie incanto per schiantare e far svenire).",
+            "score": {
+                "gryffindor": 1,
+                "slytherin": 1,
+                "ravenclaw": 0,
+                "hufflepuff": 1
+            }
+        },
+        {
+            "text": "Salvio Hexia (un potente incanto di protezione).",
+            "score": {
+                "gryffindor": 3,
+                "slytherin": 2,
+                "ravenclaw": 1,
+                "hufflepuff": 0
+            }
+        },
+        {
+            "text": "Levicorpus (un rapido incantesimo per scagliare in aria l’avversario).",
+            "score": {
+                "gryffindor": 2,
+                "slytherin": 1,
+                "ravenclaw": 0,
+                "hufflepuff": 1
+            }
+        }
+        ]
+    },
+    {
+        "question": "Curiosando per il castello riesci a entrare nella Stanza delle Cose Nascoste, moltissimi oggetti misteriosi sono disseminati attorno a te. Cosa attira maggiormente la tua attenzione?",
+        "answers": [
+            {
+                "text": "Un ciondolo a due ante argentato, chiuso da una serie di particolari meccanismi a incastro.",
+                "score": {
+                    "gryffindor": 2,
+                    "slytherin": 1,
+                    "ravenclaw": 0,
+                    "hufflepuff": 1
+                }
+            },
+            {
+                "text": "Una sottile spirale di materiale nero venato, che sembra viva e sembra volersi attorcigliare attorno alla tua bacchetta.",
+                "score": {
+                    "gryffindor": 2,
+                    "slytherin": 1,
+                    "ravenclaw": 0,
+                    "hufflepuff": 1
+                }
+            },
+            {
+                "text": "Uno strano mappamondo che cambia rappresentazione delle terre ogni volta che viene toccato mostrandoti i luoghi che maggiormente vorresti visitare.",
+                "score": {
+                    "gryffindor": 2,
+                    "slytherin": 1,
+                    "ravenclaw": 0,
+                    "hufflepuff": 1
+                }
+            },
+            {
+                "text": "Un solido bastone di legno di tasso con una serie di piccoli fori lungo tutta la lunghezza da cui fuoriescono raggi di luce.",
+                "score": {
+                    "gryffindor": 2,
+                    "slytherin": 1,
+                    "ravenclaw": 0,
+                    "hufflepuff": 1
+                }
+            }
+        ]
+    },
+    {
+        "question": "A Hogsmeade c’è un famoso pub dove gli studenti vanno spesso a bere, i Tre Manici di Scopa. Non sempre Madama Rosmerta permette gli alcolici agli studenti, ma oggi si festeggia un compleanno e ti lascia ordinare quello che vuoi, cosa prendi?",
+        "answers": [
+            {
+                "text": "Rum di ribes rosso (fresco alcolico dal sapore ricercato).",
+                "score": {
+                    "slytherin": 1,
+                    "ravenclaw": 1,
+                    "hufflepuff": 0,
+                    "gryffindor": 0
+                }
+            },
+            {
+                "text": "Burrobirra (un leggero alcolico a base di birra, burro, uova e zucchero).",
+                "score": {
+                    "slytherin": 0,
+                    "ravenclaw": 0,
+                    "hufflepuff": 2,
+                    "gryffindor": 3
+                }
+            },
+            {
+                "text": "Acquaviola (un dolce distillato).",
+                "score": {
+                    "slytherin": 2,
+                    "ravenclaw": 2,
+                    "hufflepuff": 0,
+                    "gryffindor": 0
+                }
+            },
+            {
+                "text": "Whisky Incendiario (solo per bevitori esperti).",
+                "score": {
+                    "slytherin": 0,
+                    "ravenclaw": 0,
+                    "hufflepuff": -1,
+                    "gryffindor": 2
+                }
+            }
+        ]
+    },
+    {
+        "question": "Gli ultimi anni di studio sono dedicati a imparare le magie più complesse. Solo i migliori riusciranno ad apprenderle, ma conoscere uno di questi incantesimi potrebbe aiutarti a impressionare gli esaminatori dei test del settimo anno (i M.A.G.O.). Quale ti sentiresti di poter imparare?",
+        "answers": [
+            {
+                "text": "Ardemonium (potente incantesimo per evocare l’Ardemonio, un fuoco malefico molto difficile da controllare una volta evocato).",
+                "score": {
+                    "slytherin": 3,
+                    "ravenclaw": 0,
+                    "hufflepuff": -1,
+                    "gryffindor": 1
+                }
+            },
+            {
+                "text": "Piertotum Locomotor (incantesimo avanzato per trasfigurare qualsiasi oggetto rendendolo vivo e asservito ai propri comandi).",
+                "score": {
+                    "slytherin": 1,
+                    "ravenclaw": 1,
+                    "hufflepuff": 0,
+                    "gryffindor": 1
+                }
+            },
+            {
+                "text": "Incanto Fidelius (incantesimo per trasferire un'informazione di massima importanza all’interno di una persona, come l'ubicazione di un edificio che sarà quindi visibile solamente al Custode Segreto).",
+                "score": {
+                    "slytherin": 0,
+                    "ravenclaw": 3,
+                    "hufflepuff": 0,
+                    "gryffindor": 0
+                }
+            },
+            {
+                "text": "Proteus (complesso incantesimo che permette di legare alcuni oggetti tra di loro, in modo che incantandone uno si incantino anche tutti gli altri, come per i Marchi Neri dei Mangiamorte).",
+                "score": {
+                    "slytherin": 1,
+                    "ravenclaw": 3,
+                    "hufflepuff": 0,
+                    "gryffindor": 0
+                }
+            }
+        ]
+    },
+    {
+        "question": "In questi anni a Hogwarts tanti sono stati i momenti belli e le soddisfazioni, ma non è sempre stato tutto rose e fiori. Se dovessi indicare la cosa più spiacevole quale sarebbe?",
+        "answers": [
+            {
+                "text": "Gazza il custode sempre antipatico e la sua gatta spia Mrs. Purr.",
+                "score": {
+                    "slytherin": 1,
+                    "ravenclaw": 0,
+                    "hufflepuff": 1,
+                    "gryffindor": 1
+                }
+            },
+            {
+                "text": "I temi di millecinquecento parole sulle invasioni Goblin del XIV secolo.",
+                "score": {
+                    "slytherin": 0,
+                    "ravenclaw": -1,
+                    "hufflepuff": 2,
+                    "gryffindor": 0
+                }
+            },
+            {
+                "text": "Non essere mai riusciti a vincere la Coppa delle Case.",
+                "score": {
+                    "slytherin": 2,
+                    "ravenclaw": 1,
+                    "hufflepuff": 1,
+                    "gryffindor": 3
+                }
+            },
+            {
+                "text": "Il gelo invernale e gli spifferi del castello.",
+                "score": {
+                    "slytherin": 1,
+                    "ravenclaw": 0,
+                    "hufflepuff": 1,
+                    "gryffindor": 2
+                }
+            }
+        ]
+    },
+    {
+        "question": "Se al termine dei tuoi studi, il Direttore della tua Casa ti chiedesse verso quale carriera volgeresti i tuoi interessi, cosa risponderesti?",
+        "answers": [
+            {
+                "text": "Ministro della Magia (capo della comunità magica del tuo paese).",
+                "score": {
+                    "slytherin": 2,
+                    "ravenclaw": 1,
+                    "hufflepuff": 0,
+                    "gryffindor": 0
+                }
+            },
+            {
+                "text": "Auror (mago che si occupa di trovare e sconfiggere stregoni oscuri).",
+                "score": {
+                    "slytherin": 0,
+                    "ravenclaw": -1,
+                    "hufflepuff": 0,
+                    "gryffindor": 1
+                }
+            },
+            {
+                "text": "Ricercatore presso l’Ufficio Misteri (ufficio che indaga i segreti della magia).",
+                "score": {
+                    "slytherin": 1,
+                    "ravenclaw": 2,
+                    "hufflepuff": 1,
+                    "gryffindor": 2
+                }
+            },
+            {
+                "text": "Guaritore all’Ospedale San Mungo (dove curare gravi ferite magiche).",
+                "score": {
+                    "slytherin": -1,
+                    "ravenclaw": 1,
+                    "hufflepuff": 3,
+                    "gryffindor": 0
+                }
+            }
+        ]
+    },
+    {
+        "question": "E infine, nonostante l’unico giudizio che abbia peso in questa decisione sia quello del Cappello Parlante, se potessi esprimere un augurio, in quale Casa NON vorresti essere smistato.",
+        "answers": [
+            {
+                "text": "Tassorosso, dove è salda l’amicizia.",
+                "score": {
+                    "slytherin": 0,
+                    "ravenclaw": 0,
+                    "hufflepuff": -6,
+                    "gryffindor": 0
+                }
+            },
+            {
+                "text": "Grifondoro, dove alberga il coraggio.",
+                "score": {
+                    "slytherin": 0,
+                    "ravenclaw": 0,
+                    "hufflepuff": 0,
+                    "gryffindor": -7
+                }
+            },
+            {
+                "text": "Serpeverde, dove troverai l’ambizione.",
+                "score": {
+                    "slytherin": -5,
+                    "ravenclaw": 0,
+                    "hufflepuff": 0,
+                    "gryffindor": 0
+                }
+            },
+            {
+                "text": "Corvonero, dove la saggezza è di casa.",
+                "score": {
+                    "slytherin": 0,
+                    "ravenclaw": -6,
+                    "hufflepuff": 0,
+                    "gryffindor": 0
+                }
+            }
+        ]
+    }
+  ]
+}
