@@ -8,3 +8,7 @@ Nuxt.js
 Vue.js 
 Tailwind CSS
 Daisy UI
+
+## Test
+
+Le domande del test sono state sviluppate da Lorenzo Savio

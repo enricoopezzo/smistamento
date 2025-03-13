@@ -1,9 +1,7 @@
 <template>
     <div class="hero min-h-screen">
-        <div class="hero-content flex-col lg:flex-row" v-if="currentQuestion === 0">
-            <img src="https://img.daisyui.com/images/stock/photo-1635805737707-575885ab0820.webp"
-                class="max-w-sm rounded-lg shadow-2xl" />
-            <div>
+        <div class="hero-content text-center" v-if="currentQuestion === 0">
+            <div class="max-w-md">
                 <h1 class="text-5xl font-bold">Smistamento!</h1>
                 <p class="py-6">
                     Il compito del Cappello Parlante è assai arduo e ricco di responsabilità. Rispondi sinceramente alle
@@ -14,45 +12,86 @@
             </div>
         </div>
 
-        <div class="hero-content flex-col" v-if="currentQuestion > 0 && currentQuestion <= domande.length">
-            <div>
-                <h2>{{ currentQuestion }}/{{ domande.length }}</h2>
-                <h2 class="text-xl font-bold">{{ domande[currentQuestion - 1].question }}</h2>
+
+        <div class="card bg-base-100 max-w-xl shadow-sm "
+            v-if="currentQuestion > 0 && currentQuestion <= domande.length">
+            <div class="card-body">
+                <div class="text-end">
+                    <span class="badge justify-self-end">{{ currentQuestion }}/{{ domande.length }}</span>
+                </div>
+
+                <h2 class="card-title mb-3" v-html="domande[currentQuestion - 1].question"></h2>
                 <div v-for="(answer, index) in domande[currentQuestion - 1].answers" :key="index" class=" w-full">
-                    <label>
-                        <input type="radio" name="radio" class="radio" v-model="userAnswers[currentQuestion - 1]"
-                            :value="answer" />
+                    <label class="relative ml-8 block       ">
+                        <input type="radio" name="radio" class="radio radio-sm absolute -left-8 top-1"
+                            v-model="userAnswers[currentQuestion - 1]" :value="answer" />
                         {{ answer.text }}
                     </label>
                 </div>
-            </div>
+                <div class="card-actions justify-center mt-3">
+                    <button class="btn btn-secondary" @click="previousQuestion" :disabled="currentQuestion === 1">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24"
+                            class="size-[1.2em]">
+                            <path
+                                d="M12 2C17.52 2 22 6.48 22 12C22 17.52 17.52 22 12 22C6.48 22 2 17.52 2 12C2 6.48 6.48 2 12 2ZM12 20C16.42 20 20 16.42 20 12C20 7.58 16.42 4 12 4C7.58 4 4 7.58 4 12C4 16.42 7.58 20 12 20ZM12 11H16V13H12V16L8 12L12 8V11Z">
+                            </path>
+                        </svg>
+                        Torna indietro</button>
+                    <button class="btn btn-primary" @click="nextQuestion"
+                        :disabled="!userAnswers[currentQuestion - 1]">Rispondi
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24"
+                            class="size-[1.2em]">
+                            <path
+                                d="M12 11V8L16 12L12 16V13H8V11H12ZM12 2C17.52 2 22 6.48 22 12C22 17.52 17.52 22 12 22C6.48 22 2 17.52 2 12C2 6.48 6.48 2 12 2ZM12 20C16.42 20 20 16.42 20 12C20 7.58 16.42 4 12 4C7.58 4 4 7.58 4 12C4 16.42 7.58 20 12 20Z">
+                            </path>
+                        </svg></button>
 
-            <div class="flex justify-between w-full">
-                <button class="btn btn-secondary" @click="previousQuestion"
-                    :disabled="currentQuestion === 1">Previous</button>
-                <button class="btn btn-primary" @click="nextQuestion"
-                    :disabled="!userAnswers[currentQuestion - 1]">Next</button>
+                </div>
             </div>
         </div>
+
 
         <!-- Mostra i punteggi finali dopo l'ultima domanda -->
-        <div class="hero-content flex-col" v-if="currentQuestion > domande.length">
-            <h2 class="text-3xl font-bold">Risultati finali:</h2>
-            <div>
-                {{ casata(scores) }}
-                     {{ casate }}
+        <div class="card bg-base-100 max-w-xl shadow-sm " v-if="currentQuestion > domande.length">
+            <div class="card-body">
 
+                <div v-for="(casa, index) in casate" :key="index">
+                    <div v-if="casata(scores) === casa.name">
+                        <div class="card-title" v-html="casa.label">
+                        </div>
+                        {{ casa.descrizione }}
+                    </div>
+                </div>
+                {{ housePercentage }}
+                <div v-for="houses in housePercentage" :key="houses.house">
+                    {{ houses.percentage }}
+                </div>
+
+                <div :class="`${scores.gryffindor}`">grif</div>
+                <p>Gryffindor: {{ scores.gryffindor }}</p>
+                <p>Slytherin: {{ scores.slytherin }}</p>
+                <p>Ravenclaw: {{ scores.ravenclaw }}</p>
+                <p>Hufflepuff: {{ scores.hufflepuff }}</p>
+                <p v-if="casata(scores)">
+                    {{ casata(scores) }}
+                </p>
+                <div class="card-actions justify-center mt-3">
+                    <button class="btn btn-accent" @click="reset">Ricomincia
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24"
+                            class="size-[1.2em]">
+                            <path
+                                d="M22 12C22 17.5228 17.5229 22 12 22C6.4772 22 2 17.5228 2 12C2 6.47715 6.4772 2 12 2V4C7.5817 4 4 7.58172 4 12C4 16.4183 7.5817 20 12 20C16.4183 20 20 16.4183 20 12C20 9.25022 18.6127 6.82447 16.4998 5.38451L16.5 8H14.5V2L20.5 2V4L18.0008 3.99989C20.4293 5.82434 22 8.72873 22 12Z">
+                            </path>
+                        </svg></button>
+                </div>
             </div>
-            <p>Gryffindor: {{ scores.gryffindor }}</p>
-            <p>Slytherin: {{ scores.slytherin }}</p>
-            <p>Ravenclaw: {{ scores.ravenclaw }}</p>
-            <p>Hufflepuff: {{ scores.hufflepuff }}</p>
-            <p v-if="casata(scores)">
-                {{ casata(scores) }}
-            </p>
+
+            <div>
+            </div>
         </div>
     </div>
-    {{scores}}
+
+
 </template>
 
 <script setup>
@@ -99,12 +138,38 @@ const previousQuestion = () => {
     }
 };
 
+const reset = () => {
+    currentQuestion.value = 0;
+    userAnswers.value = Array(domande.length).fill(null);
+    scores.value = {
+        gryffindor: 0,
+        hufflepuff: 0,
+        ravenclaw: 0,
+        slytherin: 0
+    };
+};
+
 const casata = (scores) => {
     let max = Math.max(...Object.values(scores));
     console.log(max);
-    return Object.keys(scores).find((key) => scores[key] === max);
-    
+    return Object.keys(scores).find((key) => scores[key] === max); 
 };
 
+const totalScore = computed(() => {
+    return Object.values(scores.value).reduce((acc, score) => acc + Math.max(score, 0), 0);
+});
+
+const housePercentage = computed(() => {
+    return Object.keys(scores.value)
+        .map((house) => {
+            const positiveScore = Math.max(scores.value[house], 0);
+            return {
+                house,
+                score: scores.value[house], // Mantiene il punteggio originale
+                percentage: totalScore.value > 0 ? Math.round((positiveScore / totalScore.value) * 100) : 0
+            };
+        })
+        .sort((a, b) => b.score - a.score); // Ordina i punteggi dal più alto al più basso
+});
 
 </script>
