@@ -12,7 +12,6 @@
             </div>
         </div>
 
-
         <div class="card card-border bg-base-100 max-w-xl shadow-sm "
             v-if="currentQuestion > 0 && currentQuestion <= domande.length">
             <div class="card-body">
@@ -74,10 +73,10 @@
                         </svg>
                     </div>
                     <div class="collapse-content text-sm">
-                         <div v-for="houses in housePercentage" :key="houses.house">
-                                <progress class="progress w-56" :value="houses.percentage" max="100"></progress>
-                                {{ houses.percentage }}%
-                                ({{ houses.score }}) {{ houses.house }}
+                        <div v-for="houses in housePercentage" :key="houses.house">
+                            <progress class="progress w-56" :value="houses.percentage" max="100"></progress>
+                            {{ houses.percentage }}%
+                            ({{ houses.score }}) {{ houses.house }}
                         </div>
                     </div>
                 </div>
