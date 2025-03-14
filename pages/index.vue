@@ -2,7 +2,7 @@
     <div class="hero min-h-screen">
         <div class="hero-content text-center" v-if="currentQuestion === 0">
             <div class="max-w-md">
-                <h1 class="text-5xl font-bold">Smistamento!</h1>
+                <h1 class="text-3xl font-bold">Test di smistamento!</h1>
                 <p class="py-6">
                     Il compito del Cappello Parlante è assai arduo e ricco di responsabilità. Rispondi sinceramente alle
                     prossime domande senza cercare di forzarne la scelta e scopri in quale delle quattro Case di
@@ -96,7 +96,20 @@
             <div>
             </div>
         </div>
+        <footer
+            class="footer sm:footer-horizontal footer-center bg-base-300 text-base-content p-4 absolute bottom-0 w-full">
+            <aside>
+                <small>
+                    <NuxtLink to="https://github.com/enricoopezzo/smistamento" target="_blank" class="link">codice
+                    </NuxtLink> - smistamento
+                    sviluppato da
+                    <NuxtLink to="https://www.instagram.com/mereciao/" target="_blank" class="link">Lorenzo</NuxtLink>
+                </small>
+            </aside>
+        </footer>
     </div>
+
+
 
 
 </template>
