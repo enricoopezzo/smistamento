@@ -13,7 +13,7 @@
         </div>
 
 
-        <div class="card bg-base-100 max-w-xl shadow-sm "
+        <div class="card card-border bg-base-100 max-w-xl shadow-sm "
             v-if="currentQuestion > 0 && currentQuestion <= domande.length">
             <div class="card-body">
                 <div class="text-end">
@@ -52,7 +52,7 @@
 
 
         <!-- Mostra i punteggi finali dopo l'ultima domanda -->
-        <div class="card bg-base-100 max-w-xl shadow-sm " v-if="currentQuestion > domande.length">
+        <div class="card card-border bg-base-100 max-w-xl shadow-sm " v-if="currentQuestion > domande.length">
             <div class="card-body">
 
                 <div v-for="(casa, index) in casate" :key="index">
@@ -62,19 +62,27 @@
                         {{ casa.descrizione }}
                     </div>
                 </div>
-                {{ housePercentage }}
-                <div v-for="houses in housePercentage" :key="houses.house">
-                    {{ houses.percentage }}
+
+                <div class="collapse bg-base-100 border-base-300 border">
+                    <input type="checkbox" />
+                    <div class="collapse-title font-semibold flex flex-start"><span class="me-3">stats</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                            class="size-[1.2em]">
+                            <path
+                                d="M2 13H8V21H2V13ZM16 8H22V21H16V8ZM9 3H15V21H9V3ZM4 15V19H6V15H4ZM11 5V19H13V5H11ZM18 10V19H20V10H18Z">
+                            </path>
+                        </svg>
+                    </div>
+                    <div class="collapse-content text-sm">
+                         <div v-for="houses in housePercentage" :key="houses.house">
+                                <progress class="progress w-56" :value="houses.percentage" max="100"></progress>
+                                {{ houses.percentage }}%
+                                ({{ houses.score }}) {{ houses.house }}
+                        </div>
+                    </div>
                 </div>
 
-                <div :class="`${scores.gryffindor}`">grif</div>
-                <p>Gryffindor: {{ scores.gryffindor }}</p>
-                <p>Slytherin: {{ scores.slytherin }}</p>
-                <p>Ravenclaw: {{ scores.ravenclaw }}</p>
-                <p>Hufflepuff: {{ scores.hufflepuff }}</p>
-                <p v-if="casata(scores)">
-                    {{ casata(scores) }}
-                </p>
+
                 <div class="card-actions justify-center mt-3">
                     <button class="btn btn-accent" @click="reset">Ricomincia
                         <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24"
