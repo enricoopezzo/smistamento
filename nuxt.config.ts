@@ -8,4 +8,11 @@ export default defineNuxtConfig({
     plugins: [tailwindcss()],
   },
   css: ["~/assets/css/app.css"],
+
+  app: {
+    baseURL: "/smistamento",
+  },
+  router: {
+    base: "/smistamento/",
+  },
 });
